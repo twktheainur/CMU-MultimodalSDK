@@ -8,6 +8,7 @@ featuresetMetadataTemplate=	[
 			"creator",#the author of the featureset
 			"contact",#the contact of the featureset
 			"featureset bib citation",#citation for the paper related to this featureset
+                        "featureset dimension names", # feature dimension names for this featureset
 			"dataset bib citation"#citation for the dataset
 			]
 

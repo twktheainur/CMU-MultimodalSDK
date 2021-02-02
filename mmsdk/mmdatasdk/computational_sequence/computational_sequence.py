@@ -65,10 +65,10 @@ class computational_sequence():
 		if validators.url(resource):
 			#user would like to store to the current directory
 			if destination is None or destination == '':
-				destination=os.path.join('./',resource.split(os.sep)[-1])
+				destination=os.path.join('./',resource.split('/')[-1])
 			#user has chosen a different directory
 			elif '.csd' not in destination:
-				destination=os.path.join(destination,resource.split(os.sep)[-1])
+				destination=os.path.join(destination,resource.split('/')[-1])
 			#.csd cannot be in the destination as we don't allow name changes when downloading
 			else:
 				log.error("Destination needs to be a folder where the downloaded computational sequence is stored. Exiting ...!",error=True)
